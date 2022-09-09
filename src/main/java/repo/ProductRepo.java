@@ -5,11 +5,11 @@ import model.Product;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ProduktRepo {
+public class ProductRepo {
 
     private Map<String, Product> products = new HashMap<>();
 
-    public ProduktRepo() {
+    public ProductRepo() {
     }
 
     public void add(Product product){
@@ -22,6 +22,9 @@ public class ProduktRepo {
         return products;
 
     }
+    public Product get(String id){
+        return products.get(id);
 
+    }
 
 }
